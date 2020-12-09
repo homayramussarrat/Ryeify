@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.piano {
+    display: flex;
+    overflow-x: hidden;
+    -webkit-box-shadow: 10px 10px 54px -28px rgba(36, 35, 36, 0.8);
+    -moz-box-shadow: 10px 10px 54px -28px rgba(36, 35, 36, 0.8);
+    box-shadow: 10px 10px 54px -28px rgba(36, 35, 36, 0.8);
+}
+
+/*using css variables to calculate reused code*/
+.key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+}
+
+.white {
+    --width: 100px;
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 5px
+}
+
+.white.active {
+    background-color: #CCC;
+}
+
+.black {
+    --width: 60px;
+    background-color: #1e272e;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+    border-radius: 10px;
+    -webkit-box-shadow: -5px 5px 26px -5px rgba(30, 39, 46, 0.28);
+    -moz-box-shadow: -5px 5px 26px -5px rgba(30, 39, 46, 0.28);
+    box-shadow: -5px 5px 26px -5px rgba(30, 39, 46, 0.28);
+}
+
+.black.active {
+    background-color: #12181c;
+}
+
+.card {
+    border-radius: 10px;
+    margin-top: 2.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.card-text,
+.list-group-item {
+    color: #12181c;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .white {
+        --width: 70px;
+    }
+
+    .black {
+        --width: 45px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .white {
+        --width: 60px;
+    }
+
+    .black {
+        --width: 35px;
+    }
+
+    .card {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
+}

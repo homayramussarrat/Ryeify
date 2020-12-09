@@ -1,0 +1,89 @@
+/* CSS Styles */
+
+
+/* -==-==-==- Nav and Layout Setup Styles -==-==-==- */
+
+/*Importing fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/*Setting up global styles and colors uniformity via css variables*/
+:root {
+    --navblack: #070707;
+    --navwhite: #ffffff;
+    --darkgreen: #017a62;
+    --lightgreen: #15c596;
+}
+
+body{
+    font-family: 'Inter', sans-serif !important;
+    overflow-x: hidden;
+}
+
+.main-container {
+    min-height: 95vh;
+    background-color: black;
+}
+
+.nav-color {
+    background-color: var(--navblack);
+}
+
+#dropdown-color {
+    background-color: var(--navblack);
+}
+
+a.dropdown-hover:hover {
+    background-color: #171717;
+}
+
+.content {
+    min-height: 82vh;
+}
+
+.navbar ul li a:hover {
+    color: var(--darkgreen) !important;
+}
+
+.site-header {
+    background-color: rgba(7, 7, 7, .85) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+    font-weight: 600 !important;
+    background: -webkit-linear-gradient(135deg, #9890e3, #b1f4cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-color {
+    color: #ADC9D8;
+}
+
+@media screen and (max-width: 420px) {
+    h1{
+        font-size: 3em !important;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    h1{
+        font-size: 2.3em !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em !important;
+    }
+
+    img#spotify-profile-pic {
+        max-width: 50vw;
+    }
+}
+
