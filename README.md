@@ -3,4 +3,4 @@ A web platform using the Spotify API, built for the CPS530 final project at Ryer
 
 VIEW THE WEBSITE HERE: https://ryeify.000webhostapp.com/
 
-EDIT: PROJECT IS WIP
+EDIT: PROJECT WEBSITE DEACTIVATED 
